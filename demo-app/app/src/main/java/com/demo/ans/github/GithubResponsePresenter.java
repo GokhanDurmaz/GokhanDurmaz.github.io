@@ -48,7 +48,7 @@ public class GithubResponsePresenter implements GithubResponseContract.Presenter
 
     @Override
     public void onDestroy() {
-        Log.i(TAG, "Terminated single process.");
+        Log.i(TAG, "Terminated single thread.");
         if (!mExecutor.isShutdown()) {
             mExecutor.shutdown();
         }
