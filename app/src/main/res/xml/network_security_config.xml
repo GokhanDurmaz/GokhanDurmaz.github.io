@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">github.io</domain>
+        <trust-anchors>
+            <certificates src="@raw/github_ca" />
+        </trust-anchors>
+        <pin-set expiration="2021-11-16">
+            <pin digest="SHA-256">xlDAST56PmiT3SR0WdFOR3dghwJrQ8yXx6JLSqTIRpk=</pin>
+            <pin digest="SHA-256">k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws=</pin>
+            <trustkit-config enforcePinning="true" />
+        </pin-set>
+    </domain-config>
+</network-security-config>

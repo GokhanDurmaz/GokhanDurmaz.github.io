@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/helloTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        tools:Text="@string/hello_demo_activity"
+        android:text="@string/hello_demo_activity"/>
+    <Button
+        android:id="@+id/refreshBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        tools:text="refresh" />
+
+    <ImageView
+        android:id="@+id/profileIV"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/profileIV"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/profileIV"
+        tools:text="NAME"/>
+
+    <TextView
+        android:id="@+id/surnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/nameTV"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/nameTV"
+        tools:text="SURNAME"/>
+
+    <TextView
+        android:id="@+id/appInfoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/helloTV"
+        android:layout_marginTop="100dp" />
+
+</RelativeLayout>
