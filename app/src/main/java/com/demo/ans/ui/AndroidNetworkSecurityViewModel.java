@@ -8,6 +8,8 @@ import javax.inject.Inject;
 
 /**
  * Created by gokhan on 12/3/21.
+ * @author gokhan
+ * @since 2021/12/03
  */
 
 public class AndroidNetworkSecurityViewModel extends ViewModel {
