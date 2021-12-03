@@ -1,5 +1,6 @@
 package com.demo.ans.github.network;
 
+import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
@@ -55,7 +56,9 @@ public class GithubDemoApplicationServer {
         } finally {
             client.disconnect();
         }
-        Log.i(TAG, "response=" + strBuilder);
+        if (!TextUtils.isEmpty(strBuilder)) {
+            Log.i(TAG, "Success to get response message from server");
+        }
         return gson.fromJson(String.valueOf(strBuilder), GithubResponseModel.class);
     }
 
