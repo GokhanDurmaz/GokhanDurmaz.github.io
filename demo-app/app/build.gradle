@@ -2,6 +2,16 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'jacoco'
+    id "com.vanniktech.code.quality.tools"
+}
+
+codeQualityTools {
+    cpd {
+        enabled = false
+    }
+    errorProne {
+        enabled = false
+    }
 }
 
 apply from: "$project.rootDir/jacoco.gradle"
@@ -50,4 +60,6 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation "com.datatheorem.android.trustkit:trustkit:$trustkit_version"
+
+
 }
